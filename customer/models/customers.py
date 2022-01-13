@@ -18,6 +18,7 @@ class Customerdetails(models.Model):
     e_mail = fields.Char(string='อีเมล์', track_visibility='onchange', required=True)
     mobile_phone = fields.Char(string='เบอร์มือถือ', track_visibility='onchange')
     phone = fields.Char(string='เบอร์โทรศัพท์', track_visibility='onchange', required=True)
+    job_position = fields.Char(string='ตำแหน่ง', track_visibility='onchange',required=True)
     fax = fields.Char(string='แฟกซ์', track_visibility='onchange')
     line_id = fields.Char(string='Line ID', track_visibility='onchange')
     

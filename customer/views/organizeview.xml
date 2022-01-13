@@ -89,6 +89,7 @@
 							<field name="mobile" style="width: 50%"/>
 							<field name="fax" style="width: 50%"/>
 							<field name="e_mail" widget="email" style="width: 50%"/>
+							<field name="website" style="width: 50%;"/>
 							<field name="line_id" style="width: 50%"/>
 							<field name="user_id" style="width: 50%"/>
 						</group>
@@ -179,7 +180,18 @@
             </p>
 		</field>
     </record>
-	
+
+	<record id="customers_action" model="ir.actions.act_window">
+        <field name="name">Contacts</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">customer.customers</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                เพิ่ม ลูกค้า ใหม่
+            </p>
+		</field>
+	</record>
     
     <menuitem id="customer_root" name="Customer" sequence="6" />
 	<menuitem id="cus_organize_root" name="Organize" parent="customer_root" action="organize_action" sequence="1" />

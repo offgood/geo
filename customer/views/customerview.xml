@@ -81,6 +81,7 @@
 					<group>
 						<group>
 							<field name="company_id" options='{"no_open": True,}' style="width: 50%;"/>
+							<field name="job_position" style="width: 50%;"/>
                             <field name="e_mail" style="width: 50%;"/>
                             <field name="mobile_phone" style="width: 50%;"/>
                             <field name="phone" style="width: 50%;"/>
